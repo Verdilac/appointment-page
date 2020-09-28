@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/appointment.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="../images/background.jpg" />
+
+      <div class="app">
+        <h1>Create Appointment</h1>
+
+        <form action="" id="appointment" method="GET">
+          <input
+            type="text"
+            class="appform"
+            id="name"
+            placeholder="Enter your name"
+          />
+
+          <input
+            type="text"
+            class="appform"
+            id="email"
+            placeholder="Enter your email"
+          />
+
+          <select class="select" id="selected" >
+            <option disabled selected value="1" id="opt1" >
+              Select Appointment Type
+            </option>
+            <option value="2" id="opt2" >In Salon</option>
+            <option value="3" id="opt3" >Home Visit</option>
+          </select>
+
+          <input type="date" class="appform" id="date" placeholder="dd/mm/yy"  />
+
+          <input type="time" class="appform" id="name" placeholder="Time" />
+          
+          <div class="payment">
+
+             <input type="radio" name="payment" id="card" />
+          <label for="card">
+            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            <span>Card</span>
+          </label>
+          <input type="radio" name="payment" id="cash" />
+          <label for="cash">
+            <i class="fa fa-money" aria-hidden="true"></i>
+            <span>Cash</span>
+          </label>
+          </div>
+          <br>
+         
+
+          <button type="submit" class="rateFormButton" onsubmit="display()">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="../js/apointment.js"></script>
+  </body>
+</html>
